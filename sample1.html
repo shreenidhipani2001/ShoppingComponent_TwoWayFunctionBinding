@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vmax;
+    width: 100vmax;
+}
+section{
+    height: 400px;
+}
+    </style>
+</head>
+<body>
+    <script>
+        import { useState,useEffect } from "react";
+    
+    
+    export default function shoppingComponent(){
+    
+        return(
+            <div className="container">
+                <header>
+                    <h1 className="bg-danger text-white text-center p-2">
+                        <span className="bi bi-cart"></span>
+                        Shopping Home
+                    </h1>
+                </header>
+                <section className="row">
+                    <nav className="col-3">
+                        <div>
+                            <label>Select a Component</label> 
+                            <div>
+                                <select className="form-select">
+                                </select>    
+                            </div>   
+                        </div>
+                    </nav>
+                    <main className="col-9">
+    
+                    </main>
+                </section>
+            </div>
+        )
+    }
+    </script>   
+</body>
+
+</html>
